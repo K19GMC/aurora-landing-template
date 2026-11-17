@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aurora — a modern landing page template</title>
+  <meta name="description" content="Aurora is a fast, dependency-free landing page template: dark theme, responsive layout, and zero build step." />
+  <meta name="theme-color" content="#0b0c10" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Aurora — a modern landing page template" />
+  <meta property="og:description" content="A fast, dependency-free landing page template with zero build step." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Aurora home">
+        <svg class="brand-mark" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#7c5cff" />
+              <stop offset="100%" stop-color="#22d3ee" />
+            </linearGradient>
+          </defs>
+          <path d="M14 2 26 24H2L14 2Z" fill="url(#g)" />
+          <path d="M14 10 20 22H8l6-12Z" fill="#0b0c10" opacity=".85" />
+        </svg>
+        <span>Aurora</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav id="primary-nav" class="nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-ghost btn-sm" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="badge"><span class="dot" aria-hidden="true"></span> Static, fast, and yours to rebrand</p>
+        <h1>Ship a landing page<br /><span class="gradient-text">today, not next week.</span></h1>
+        <p class="lede">
+          Aurora is a single-page template with a dark theme, responsive layout, and
+          no build step. Edit two files, deploy anywhere.
+        </p>
+        <div class="cta-row">
+          <button class="btn btn-primary" type="button" data-copy="npx serve .">
+            <span data-copy-label>Copy start command</span>
+          </button>
+          <a class="btn btn-outline" href="#features">See what's inside</a>
+        </div>
+        <ul class="hero-facts">
+          <li>No dependencies</li>
+          <li>Under 8 KB gzipped</li>
+          <li>Accessible by default</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="logos" aria-label="Example customers">
+      <div class="container">
+        <p class="logos-label">Example customers — replace with your own</p>
+        <ul class="logo-row">
+          <li>Northwind</li>
+          <li>Acme Labs</li>
+          <li>Globex</li>
+          <li>Initech</li>
+          <li>Umbrella</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <p class="eyebrow">Features</p>
+        <h2>Everything a landing page needs. Nothing it doesn't.</h2>
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" /></svg>
+            </div>
+            <h3>Zero build step</h3>
+            <p>Plain HTML, CSS, and one small script. Open the file, edit, refresh. Deploy the folder as-is.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2" /><path d="M8 21h8M12 18v3" /></svg>
+            </div>
+            <h3>Responsive grid</h3>
+            <p>Fluid type with <code>clamp()</code>, a collapsing navigation, and layouts that reflow from phone to desktop.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg>
+            </div>
+            <h3>Fast by default</h3>
+            <p>No fonts to download, no frameworks to parse, no layout shift. Inline SVG icons and a system font stack.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 9 9" /><path d="M12 3v9l6-3" /><path d="M3 12h9" /></svg>
+            </div>
+            <h3>Themeable tokens</h3>
+            <p>Colours, spacing, and radii live in CSS custom properties. Rebrand the whole page from one block.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+            </div>
+            <h3>Accessible markup</h3>
+            <p>Semantic landmarks, a skip link, visible focus rings, and a reduced-motion path for every animation.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17V7l8 5 8-5v10" /><path d="M4 7h16" /></svg>
+            </div>
+            <h3>Deploy anywhere</h3>
+            <p>Works on any static host: Vercel, Netlify, GitHub Pages, S3, or a folder behind your own nginx.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="how">
+      <div class="container">
+        <p class="eyebrow">How it works</p>
+        <h2>Three steps from clone to live.</h2>
+        <ol class="steps">
+          <li>
+            <span class="step-num">1</span>
+            <h3>Clone the repo</h3>
+            <p>Fork or download the template, then open <code>index.html</code> in a browser.</p>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <h3>Edit content and tokens</h3>
+            <p>Replace the copy, point the links at your product, and change the colours in <code>:root</code>.</p>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <h3>Deploy the folder</h3>
+            <p>Push to your host of choice. There is no build output to generate and no environment to manage.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="container">
+        <p class="eyebrow">Pricing</p>
+        <h2>Example plans — sample content only.</h2>
+        <div class="grid grid-3 pricing">
+          <article class="card price-card">
+            <h3>Starter</h3>
+            <p class="price"><span>$0</span><span class="per">/month</span></p>
+            <ul class="check-list">
+              <li>One page</li>
+              <li>Community support</li>
+              <li>MIT licensed source</li>
+            </ul>
+            <a class="btn btn-outline btn-block" href="#top">Start free</a>
+          </article>
+          <article class="card price-card featured">
+            <p class="tag">Most popular</p>
+            <h3>Studio</h3>
+            <p class="price"><span>$19</span><span class="per">/month</span></p>
+            <ul class="check-list">
+              <li>Unlimited pages</li>
+              <li>Priority support</li>
+              <li>Figma source files</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="#top">Choose Studio</a>
+          </article>
+          <article class="card price-card">
+            <h3>Agency</h3>
+            <p class="price"><span>$49</span><span class="per">/month</span></p>
+            <ul class="check-list">
+              <li>Everything in Studio</li>
+              <li>Client hand-off kit</li>
+              <li>White-label licence</li>
+            </ul>
+            <a class="btn btn-outline btn-block" href="#top">Contact us</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="faq">
+      <div class="container narrow">
+        <p class="eyebrow">FAQ</p>
+        <h2>Questions, answered.</h2>
+        <div class="faq">
+          <details>
+            <summary>Do I need Node.js or a bundler?</summary>
+            <p>No. The template ships as static files. Any static file server works, including <code>python3 -m http.server</code>.</p>
+          </details>
+          <details>
+            <summary>Can I use this for a client project?</summary>
+            <p>Yes. The template is MIT licensed, so you can use, modify, and redistribute it, including commercially.</p>
+          </details>
+          <details>
+            <summary>How do I change the accent colour?</summary>
+            <p>Edit <code>--accent</code> and <code>--accent-2</code> in the <code>:root</code> block at the top of <code>styles.css</code>.</p>
+          </details>
+          <details>
+            <summary>Does it include a contact form?</summary>
+            <p>Not yet. Point the call-to-action buttons at your form provider or mailto link, or add a form and post it to your own endpoint.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band">
+          <h2>Ready to make it yours?</h2>
+          <p>Fork the repo, swap the words, ship the page.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://github.com" target="_blank" rel="noopener noreferrer">Get the template</a>
+            <a class="btn btn-ghost" href="#features">Review features</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> Aurora. A free landing page template.</p>
+      <nav aria-label="Footer">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
